@@ -13,5 +13,5 @@ class Measurement(models.Model):
 
 class Sensor_Measurement(models.Model):
     measurement=models.ForeignKey(Measurement,related_name='measurements', on_delete=models.CASCADE)
-    sensor=models.ForeignKey(Sensor, related_name='sensor', on_delete=models.CASCADE)
+    sensor=models.ForeignKey(Sensor, related_name='sensors', on_delete=models.CASCADE)
 
